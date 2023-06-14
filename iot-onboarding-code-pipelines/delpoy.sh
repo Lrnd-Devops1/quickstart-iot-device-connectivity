@@ -1,9 +1,9 @@
 env=$1
 stackName=$2
 #update this variable to specify the name of your loval env
-echo "**********************************************"
-echo "* IOT Onboarding Code Pipeline project '$env' "
 echo "***********************************************"
+echo "* IOT Onboarding Code Pipeline project '$env' "
+echo "************************************************"
 if [ -z "$env" ]
 then
     echo "Environment Must not be Empty"
