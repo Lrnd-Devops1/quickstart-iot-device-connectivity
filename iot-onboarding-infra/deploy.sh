@@ -42,7 +42,7 @@ else
     cdk --app bin/iot-onboarding-infra.js deploy IOTOnboardingInfraStack$env -c envName=$env -c artifactBucket=$bucket -c mqttTopic=$mqttTopic --require-approval never
     rc=$?
     if [ $rc -ne 0 ]; then
-      echo "CDK Deploy Failed Now! Existing Build with status $rc" >&2
+      echo "CDK Deploy Failed! Existing Build with status $rc" >&2
       exit $rc
     fi
 
