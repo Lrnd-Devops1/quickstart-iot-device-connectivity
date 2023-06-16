@@ -21,7 +21,7 @@ stack.templateOptions.metadata = { "QuickStartDocumentation": { EntrypointName: 
 /**************
  * Tagging all resources in stack
  */
-Tag.add(stack, 'application-name', 'iot-onboarding');
-Tag.add(stack, 'application-env', envName);
+cdk.Tags.of(stack).add('application-name', 'iot-onboarding');
+cdk.Tags.of(stack).add('application-env', envName);
 
 app.synth();
